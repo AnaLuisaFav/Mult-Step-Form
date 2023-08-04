@@ -1,0 +1,204 @@
+@media (max-width: 767px) {
+
+	main {
+		min-height: unset;
+		justify-content: unset;
+		display: unset;
+		align-items: unset;
+	}
+
+	body {
+		overflow-x: hidden;
+		background-color: white;
+	}
+
+	.container {
+		width: 100%;
+		display: block;
+		padding: unset;
+		background-color: hsl(217, 100%, 97%);
+	}
+
+	.side-bar {
+		background-image: url(img/bg-sidebar-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100vw;
+		height: 172px;
+	}
+
+	.conteudo-side-bar {
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.titulo-step {
+		display: none;
+	}
+
+	.titulo-erro {
+		width: 297px;
+	}
+
+	div.infos {
+		margin: auto;
+		margin-top: -74px;
+		margin-bottom: 30px;
+		background-color: white;
+		padding: 30px 20px;
+		border-radius: 15px;
+		width: 300px;
+	}
+
+	.infos {
+		background-color: hsl(217, 100%, 97%);
+	}
+
+	.infos.infos-step-1 {
+		height: 350px;
+	}
+
+
+	section.conteudo-side-bar {
+		display: flex;
+		justify-content: center;
+	}
+
+	section.step {
+		position: relative;
+	}
+
+	.circle {
+		margin-right: 15px;
+	}
+
+	input {
+		width: 277px;
+		height: 15px;
+	}
+
+	.infos-step-1, .infos-step-2, .infos-step-3, .infos-step-4, .thanks {
+		width: 320px;
+		height: unset;
+	}
+
+	.infos-step-1 h2 {
+		font-weight: 500;
+	}
+
+	.infos-step-1 p, .infos-step-2 p, .infos-step-3 p, .infos-step-4 p {
+		margin-bottom: 22px;
+		line-height: 25px;
+		font-size: 1em;
+	}
+
+	.infos-step-1 p {
+		margin-bottom: unset;
+	}
+
+	.infos-step-2 h2 {
+		margin-bottom: unset;
+	}
+
+	.card.yearly {
+		height: 50px;
+	}
+
+	.yearly p {
+		margin-bottom: unset;
+	}
+
+	.botoes {
+		padding: 20px 0px;
+		margin: auto;
+		width: 325px;
+	}
+
+	.area-botoes {
+		background-color: white;
+	}
+
+	.cards {
+		flex-direction: column;
+	}
+
+	.card {
+		height: 45px;
+		width: 267px;
+	}
+
+	.texto-card {
+		margin-top: unset;
+		margin-left: 15px;
+	}
+
+	.texto-card p, .texto-step-3 p {
+		margin-bottom: unset;
+	}
+
+	.card, .card2 {
+		display: inline-flex;
+		flex-direction: unset;
+		align-items: center;
+	}
+
+	.filtro {
+		background-color: hsl(231, 100%, 99%);
+		width: 300px;
+		margin: 17px 0px 0px;
+	}
+
+	.opc {
+		width: 269px;
+		height: 42px;
+	}
+
+	.texto-step-3 {
+		width: 175px;
+	}
+
+	.texto-step-3 p {
+		font-size: 0.8em;
+		height: 19px;
+	}
+
+	.preco-step-3 {
+		font-size: 0.9em;
+	}
+
+	.titulo-step-4 p {
+		margin-bottom: 20px;
+	}
+
+	.infos-step-4 p {
+		margin-bottom: unset;
+	}
+
+	.pt3 {
+		padding: unset;
+		width: 288px;
+	}
+
+	.fundo {
+		width: 258px;
+	}
+
+	div.thanks {
+		justify-content: center;
+	}
+
+	.thanks {
+		height: 300px;
+		width: 300px;
+	}
+
+	.thanks h2 {
+		margin-top: 15px;
+	}
+
+	.img-thanks {
+		width: 50px;
+	}
+
+}

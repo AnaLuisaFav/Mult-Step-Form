@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+main {
+	min-height: 100vh;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+* {
+	font-family: "Ubuntu", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: hsl(217, 100%, 97%);
+}
+
+.container {
+	background-color: #fff;
+	display: flex;
+	padding: 15px;
+	border-radius: 10px;
+	width: 795px;
+}
+
+.side-bar {
+	background-image: url(img/bg-sidebar-desktop.svg);
+	width: 375px;
+	height: 568px;
+}
+
+.conteudo-side-bar {
+	padding: 35px;
+	text-transform: uppercase;
+}
+
+.conteudo-side-bar > div {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.conteudo-side-bar h1, .conteudo-side-bar h2, .botao-next, .botao-confirm {
+	font-size: 0.8em;
+}
+
+.conteudo-side-bar h1 {
+	font-weight: 100;
+	color: #ffffffa3;
+	margin-bottom: 5px;
+}
+
+.conteudo-side-bar h2 {
+	color: #fff;
+}
+
+.circle {
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 50px;
+	padding: 10px;
+	width: 11px;
+	height: 11px;
+	text-align: center;
+	line-height: 11px;
+}
+
+.selected {
+	background-color: #bfe1fd;
+	border: 1px solid #bfe1fd;
+	color: #000;
+	font-weight: 600;
+}
+
+.infos {
+	display: flex;
+	flex-direction: column;
+	padding: 60px 60px 0px 60px;
+}
+
+.infos h1, .infos h2, .infos-step-2 h2, .filtro h3, .preco-pt1, .texto-card span {
+	color: hsl(213, 96%, 18%);
+}
+
+.infos h1 {
+	font-size: 1.5em;
+	margin-bottom: 9px;
+}
+
+.infos p, .infos h2 {
+	font-size: 0.9em;
+	font-weight: 200;
+}
+
+.infos h2 {
+	margin-bottom: 5px;
+}
+
+.infos-step-1 h2 {
+	margin-top: 20px;
+}
+
+.infos p {
+	color: hsl(231, 11%, 63%);
+}
+
+.infos-step-1 p, .infos-step-2 p {
+	margin-bottom: 29px;
+}
+
+.infos-step-1, .infos-step-3, .infos-step-4, .thanks {
+	width: 401px; 
+	height: 346px;
+}
+
+input {
+	font-size: 0.9em;
+	font-weight: 500;
+	border: 1px solid hsl(229, 24%, 87%);
+	border-radius: 5px;
+	padding: 10px;
+	width: 380px;
+	height: 25px;
+}
+
+.input-erro {
+  border: 1px solid red;
+}
+
+.botoes {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 55px;
+	white-space: nowrap;
+	padding: 60px 60px 0px 60px;
+}
+
+.botao-next, .botao-confirm {
+  background-color: hsl(213, 96%, 18%);
+  border: 1px solid hsl(213, 96%, 18%);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+	align-self: self-end;
+}
+
+.botao-back span {
+	color: hsl(231, 11%, 63%);
+	font-weight: 500;
+}
+
+.botao-back span:hover {
+	color: hsl(213, 96%, 18%);
+}
+
+
+.botao-next:hover, .botao-confirm:hover {
+	background-color: hsl(212.07deg 73.42% 30.98%);
+	border: 1px solid hsl(212.07deg 73.42% 30.98%);
+}
+
+input, .botao-next, .botao-confirm, .card, .botao-back span:hover, .opc, .texto-pt1 p {
+	cursor: pointer;
+}
+
+.cards {
+	gap: 10px;
+	display: flex;
+}
+
+.card, .card2 {
+	border: 1px solid hsl(255deg 8.33% 90.59%);
+	border-radius: 5px;
+	display: inline-flex;
+	flex-direction: column;
+	width: 95px;
+	padding: 15px;
+}
+
+.card {
+	height: 123px;
+}
+
+.card2 {
+	height: 130px;
+}
+
+.card:hover, .card2:hover {
+	border: 1px solid hsl(212.07deg 73.42% 30.98%);
+}
+
+.card-selected {
+	background-color: hsl(231, 100%, 99%);
+	border: 1px solid hsl(212.07deg 73.42% 30.98%);
+}
+
+.yearly, .yearly-s4 {
+	display: none;
+}
+
+.texto-card {
+	margin-top: 30px;
+}
+
+.texto-card p {
+	margin-bottom: 0px;
+}
+
+.texto-card span {
+	font-size: 0.8em;
+	font-weight: 500;
+}
+
+.infos-step-2 h2 {
+	font-size: 1em;
+	font-weight: 500;
+}
+
+/* --- filtro --- */
+
+.filtro {
+	display: flex;
+	background-color: hsl(231, 100%, 99%);
+	border-radius: 10px;
+	height: 50px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 22px 0px;
+	gap: 30px;
+}
+
+.filtro h3 {
+	font-size: 1em;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 21px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  right: 25px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(-19px);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  right: 3px;
+}
+
+.step-3-borda {
+	padding: 10px 15px;
+	border: 1px solid hsl(229, 24%, 87%);
+	border-radius: 10px;
+}
+
+.check input {
+	margin: auto;
+	width: 13px;
+}
+
+.infos-step-3 h2, .infos-step-4 h2,  {
+	font-weight: 600;
+}
+
+.titulo-step-3 p {
+	margin-bottom: 30px;
+}
+
+.opcoes {
+	display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.opc {
+	width: 350px;
+	height: 60px;
+	display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opc:hover {
+	border: 1px solid #483eff;
+}
+
+.opc-selected {
+	background-color: hsl(217, 100%, 97%);
+	border: 1px solid #483eff;
+}
+
+.texto-step-3 {
+	width: 200px;
+}
+
+.preco-step-3 {
+	color: #483eff;
+}
+
+.s3-year {
+	display: none;
+}
+
+.label-texto {
+	gap: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.fundo {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	background-color: hsl(230deg 75% 98.43%);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.texto-pt1 h2, .preco-pt1 span, .thanks h2 {
+	font-weight: 600;
+}
+
+.pt1, .pt2 > div, .pt3 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.separa {
+	margin: 10px 0px;
+	border: 1px solid hsl(229deg 17.07% 90.68% / 41%);
+}
+
+.texto1-pt2 p {
+	margin-bottom: 15px;
+}
+
+.pt3 {
+	padding: 0px 20px;
+}
+
+.preco-pt3 span {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: hsl(243, 100%, 62%);
+}
+
+.texto-pt1 p {
+	text-decoration: underline;
+}
+
+.botao-confirm {
+	border: 1px solid hsl(243, 100%, 62%);
+	background-color: hsl(243, 100%, 62%);
+}
+
+.thanks {
+	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.thanks h2 {
+	margin-top: 40px;
+	font-size: 2em;
+}
+
+.thanks p {
+	font-size: 1em;
+}
+
+.erro, .erro-card, .erro-opc {
+	color: red;
+	font-size: 0.6em;
+	margin-top: 4px;
+}
+
+.erro-card, .erro-opc {
+	height: 11px;
+	display: flex;
+	gap: 3px;
+}
+
+.titulo-erro {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.botao-x {
+	width: 10px;
+	height: 10px;
+}

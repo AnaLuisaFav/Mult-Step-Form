@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="media.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+  <main>
+    <section class="container">
+      <section class="side-bar">
+        <section class="conteudo-side-bar">
+          <div class="button-step">
+            <div class="circle c1" data-step="1">1</div>
+            <div class="titulo-step">
+              <h1>Step 1</h1>
+              <h2>Your info</h2>
+            </div>
+          </div>
+          <div class="button-step">
+            <div class="circle c2" data-step="2">2</div>
+            <div class="titulo-step">
+              <h1>Step 2</h1>
+              <h2>Select Plan</h2>
+            </div>
+          </div>
+          <div class="button-step">
+            <div class="circle c3" data-step="3">3</div>
+            <div class="titulo-step">
+              <h1>Step 3</h1>
+              <h2>Add-Ons</h2>
+            </div>
+          </div>
+          <div class="button-step">
+            <div class="circle c4" data-step="4">4</div>
+            <div class="titulo-step">
+              <h1>Step 4</h1>
+              <h2>Summary</h2>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+      <section class="step">
+          <div class="infos">
+          <div class="infos-step-1">
+            <h1>Personal Info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+            <div class="titulo-erro">
+              <h2>Name</h2>
+              <div class="erro erro-name"></div>
+            </div>
+            <input class="nome" type="text" name="nome" placeholder="e.g. Stephen King">
+            <div class="titulo-erro">
+              <h2>Email Address</h2>
+              <div class="erro erro-email"></div>
+            </div>
+            <input class="email" type="email" name="email" placeholder="e.g. stephenking@lorem.com">
+            <div class="titulo-erro">
+              <h2>Phone Number</h2>
+              <div class="erro erro-phone"></div>
+            </div>
+            <input class="fone" type="number" name="fone" placeholder="e.g. +1 234 567 890">
+          </div>
+
+          <div class="infos-step-2">
+              <h1>Select your plan</h1>
+              <p>You have the option of monthly or yearly billing.</p>
+
+            <div class="cards">
+
+              <div class="card">
+                <div class="img-card-1"><img src="img/icon-arcade.svg"></div>
+                <div class="texto-card">
+                  <h2>Arcade</h2>
+                  <p class="monthly">$9/mo</p>
+                  <div class="yearly">
+                    <p>$90/yr</p>
+                    <span>2 months free</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="img-card-2"><img src="img/icon-advanced.svg"></div>
+                <div class="texto-card">
+                  <h2>Advanced</h2>
+                  <p class="monthly">$12/mo</p>
+                  <div class="yearly">
+                    <p>$120/yr</p>
+                    <span>2 months free</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-card-3"><img src="img/icon-pro.svg"></div>
+                <div class="texto-card">
+                  <h2>Pro</h2>
+                  <p class="monthly">$15/mo</p>
+                  <div class="yearly">
+                    <p>$90/yr</p>
+                    <span>2 months free</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="erro-card"></div>
+
+              <div class="filtro">
+                <h3>Monthly</h3>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+                <h3>Yearly</h3>
+              </div>
+          </div> 
+
+          <div class="infos-step-3">
+            <div class="titulo-step-3">
+              <h1>Pick add-ons</h1>
+              <p>Add-ons help enhance your gaming experience.</p>
+            </div>
+            <div class="opcoes">
+              <div class="opc step-3-borda">
+                <div class="label-texto">
+                  <label class="check">
+                    <input type="checkbox" id="checkbox1">
+                  </label>
+                  <div class="texto-step-3">
+                    <h2>Online service</h2>
+                    <p>Access to multiplayer games</p>
+                  </div>
+                </div>
+                <div class="preco-step-3">
+                  <span class="s3-month">+$1/mo</span>
+                  <span class="s3-year">+$10/yr</span>
+                </div>
+              </div>
+
+              <div class="opc step-3-borda">
+                <div class="label-texto">
+                  <label class="check">
+                    <input type="checkbox" id="checkbox2">
+                  </label>
+                  <div class="texto-step-3">
+                    <h2>Larger storage</h2>
+                    <p>Extra 1TB of cloud save</p>
+                  </div>
+                </div>
+                <div class="preco-step-3">
+                  <span class="s3-month">+$2/mo</span>
+                  <span class="s3-year">+$20/yr</span>
+                </div>
+              </div>
+
+              <div class="opc step-3-borda">
+                <div class="label-texto">
+                  <label class="check">
+                    <input type="checkbox" id="checkbox3">
+                  </label>
+                  <div class="texto-step-3">
+                    <h2>Customizable Profile</h2>
+                    <p>Custom theme on your profile</p>
+                  </div>
+                </div>
+                <div class="preco-step-3">
+                  <span class="s3-month">+$2/mo</span>
+                  <span class="s3-year">+$20/yr</span>
+                </div>
+              </div>
+            </div>
+            <div class="erro-opc"></div>
+          </div> 
+
+         <div class="infos-step-4">
+            <div class="titulo-step-4">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.</p>
+            </div>
+
+            <div class="tudo-step-4 monthly-s4">
+              <div class="fundo">
+                <div class="pt1">
+                  <div class="texto-pt1">
+                    <h2>Arcade (Monthly)</h2>
+                    <p class="botao-change-m">Change</p>
+                  </div>
+                  <div class="preco-pt1">
+                    <span>$9/mo</span>
+                  </div>
+                </div> 
+
+              <div class="separa"></div>
+
+                <div class="pt2">
+                  <div class="texto-preco-pt2">
+                    <div class="texto1-pt2">
+                    <p>Online service</p>
+                    </div>
+                    <div class="preco1-pt2">
+                      <span>+$1/mo</span>
+                    </div>
+                  </div>
+                  <div class="texto-preco-pt2-2">
+                    <div class="texto2-pt2">
+                    <p>Larger storage</p>
+                    </div>
+                    <div class="preco2-pt2">
+                      <span>+$2/mo</span>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+              <div class="pt3">
+                <div class="texto-pt3">
+                  <p>Total (per month)</p>
+                </div>
+                <div class="preco-pt3">
+                  <span>+$12/mo</span>
+                </div>
+              </div> 
+            </div> 
+
+            <div class="tudo-step-4 yearly-s4">
+              <div class="fundo">
+                <div class="pt1">
+                  <div class="texto-pt1">
+                    <h2>Arcade (Yearly)</h2>
+                    <p class="botao-change-y">Change</p>
+                  </div>
+                  <div class="preco-pt1">
+                    <span>$90/yr</span>
+                  </div>
+                </div> 
+
+              <div class="separa"></div>
+
+                <div class="pt2">
+                  <div class="texto-preco-pt2">
+                    <div class="texto1-pt2">
+                    <p>Online service</p>
+                    </div>
+                    <div class="preco1-pt2">
+                      <span>+$10/yr</span>
+                    </div>
+                  </div>
+                  <div class="texto-preco-pt2-2">
+                    <div class="texto2-pt2">
+                    <p>Larger storage</p>
+                    </div>
+                    <div class="preco2-pt2">
+                      <span>+$20/yr</span>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+              <div class="pt3">
+                <div class="texto-pt3">
+                  <p>Total (per year)</p>
+                </div>
+                <div class="preco-pt3">
+                  <span>+$120/yr</span>
+                </div>
+              </div> 
+            </div>
+          </div> 
+
+          <div class="thanks">
+            <div class="ok">
+              <img class="img-thanks" src="img/icon-thank-you.svg">
+            </div>
+            <div>
+              <h2>Thank you!</h2>
+              <p>Thanks for confirming your subscription! We hope you have fun 
+              using our platform. If you ever need support, please feel free 
+              to email us at support@loremgaming.com.</p>
+            </div>
+          </div>
+          </div>
+
+        <div class="area-botoes">
+          <div class="botoes">
+              <div class="botao-back">
+                <span>Go Back</span>
+              </div>
+              <div class="botao-next">
+                <span>Next Step</span>
+              </div>
+              <div class="botao-confirm">
+                <span>Confirm</span>
+              </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  
+  <script type="text/javascript" src="init.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
