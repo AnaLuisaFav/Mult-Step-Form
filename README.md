@@ -9,7 +9,7 @@
 
 <div>
 
-*<h1>Pré-visualização</h1>Preview*
+*<h1>Preview</h1>*
 
 <div align='center'>
 <img src="https://github.com/AnaLuisaFav/Mult-Step-Form/assets/125583157/d4d4d8e0-edbf-44fa-bf3e-799c9d9ccf45"
@@ -27,23 +27,9 @@
 
 </div>
 
-*<h1>Sobre</h1>About*
+*<h1>About</h1>*
 
-<img src="https://github.com/AnaLuisaFav/Interactive-rating-component/assets/125583157/2ae8d39b-cd3b-4e51-9697-a889efe168f3" alt="image" style="width: 20px"> O desafio é construir esse formulário de várias etapas e deixá-lo o mais próximo possível do design.
-
-Os usuários devem ser capazes de:
-
-• Concluir cada etapa da sequência<br>
-• Voltar para uma etapa anterior<br>
-• Ver um resumo de suas seleções na etapa final e confirme seu pedido<br>
-• Ver o layout ideal para a interface, dependendo do tamanho da tela do dispositivo<br>
-• Ver os estados de focalização e foco para todos os elementos interativos na página<br>
-• Receber mensagens de validação de formulário se:<br>
-  • Um campo estiver vazio<br>
-  • O endereço de e-mail não está formatado corretamente<br>
-  • Uma etapa foi enviada, mas nenhuma seleção foi feita<br>
-
-<img src="https://github.com/AnaLuisaFav/Interactive-rating-component/assets/125583157/7829887e-fb45-4d07-973d-0b4b20dac189" alt="image" style="width: 20px"> The challenge is to build out this multi-step form and get it looking as close to the design as possible.<br>
+☆ The challenge is to build out this multi-step form and get it looking as close to the design as possible.<br>
 
 The users should be able to:
 
@@ -57,12 +43,12 @@ The users should be able to:
   • The email address is not formatted correctly<br>
   • A step is submitted, but no selection has been made<br>
 
-*<h1>Feito com</h1>Built with*
+*<h1>Built with</h1>*
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
 
 
-*<h1>Vamos nos conectar?</h1>Let's connect?👋*
+*<h1>Let's connect?👋</h1>*
 
 <div>
 
