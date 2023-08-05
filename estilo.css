@@ -436,6 +436,8 @@ input:checked + .slider:before {
   padding: 5px 0px;
   width: 100%;
   text-align: center; 
+  position: absolute;
+  bottom: 0;
 }
 
 footer a {
