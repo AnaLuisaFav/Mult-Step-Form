@@ -52,6 +52,13 @@ function updateStep(step) {
 
 }
 
+function hideErrorMessage(inputElement, errorElement) {
+  inputElement.addEventListener('input', function () {
+    errorElement.textContent = '';
+    inputElement.classList.remove('input-erro');
+  });
+}
+
 function checkFormValidity() {
   const nameInput = document.querySelector('.nome')
   const emailInput = document.querySelector('.email')
@@ -65,6 +72,7 @@ function checkFormValidity() {
     isFormValid = false
     erroName.textContent = 'This field is required'
     nameInput.classList.add('input-erro')
+    hideErrorMessage(nameInput, erroName);
   } else {
     erroName.textContent = ''
     nameInput.classList.remove('input-erro')
@@ -74,12 +82,14 @@ function checkFormValidity() {
     isFormValid = false
     erroEmail.textContent = 'This field is required'
     emailInput.classList.add('input-erro') 
+    hideErrorMessage(emailInput, erroEmail);
   } else {
     const emailRegex = /^\S+@\S+\.\S+$/
     if (!emailRegex.test(emailInput.value)) {
       isFormValid = false
       erroEmail.textContent = 'Invalid email format'
       emailInput.classList.add('input-erro') 
+      hideErrorMessage(emailInput, erroEmail);
     } else {
       erroEmail.textContent = ''
       emailInput.classList.remove('input-erro') 
@@ -90,6 +100,7 @@ function checkFormValidity() {
     isFormValid = false
     erroPhone.textContent = 'This field is required'
     phoneInput.classList.add('input-erro') 
+    hideErrorMessage(phoneInput, erroPhone);
   } else {
     erroPhone.textContent = ''
     phoneInput.classList.remove('input-erro') 
