@@ -201,4 +201,23 @@
 		width: 50px;
 	}
 
+	 footer {
+	  font-size: 0.9em;
+	  color: hsl(217, 19%, 35%);
+	  position: fixed;
+	  padding: 5px 0px;
+	  bottom: 0px;
+	  width: 100%;
+	  text-align: center; 
+	}
+	
+	footer a {
+	  text-decoration: none;
+	  color: #f8808d;
+	}
+	
+	footer a:hover {
+	  color: #f7001b;
+	}
+
 }
