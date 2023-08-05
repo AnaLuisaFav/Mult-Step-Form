@@ -433,9 +433,7 @@ input:checked + .slider:before {
  footer {
   font-size: 0.9em;
   color: hsl(217, 19%, 35%);
-  position: fixed;
   padding: 5px 0px;
-  bottom: 0px;
   width: 100%;
   text-align: center; 
 }
