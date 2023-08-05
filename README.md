@@ -3,7 +3,7 @@
   <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
  
-*<h1>Desafio Frontend Mentor</h1>Frontend Mentor Challenge*
+*<h1>Frontend Mentor Challenge</h1>*
 
 </div>
 
