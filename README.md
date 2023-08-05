@@ -19,11 +19,11 @@
 <br>
 
 <p align="center">
-  <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ/hub" target="_blank"><strong>Página do desafio - Challenge page</strong></a>
+  <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ/hub" target="_blank"><strong>Challenge page</strong></a>
   <br>
 
 <p align="center">
-  <a href="https://analuisafav.github.io/Mult-Step-Form/" target="_blank">Visualizar minha solução do desafio - View my challenge solution</a>
+  <a href="https://analuisafav.github.io/Mult-Step-Form/" target="_blank">View my challenge solution</a>
 
 </div>
 
